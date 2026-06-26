@@ -22,27 +22,26 @@
 <!-- Hero Section -->
 <section id="home" class="hero">
   <div class="hero-slideshow">
-    <img src="assets/images/venus1.avif" alt="Event 1">
-    <img src="assets/images/venus2.avif" alt="Event 2">
-    <img src="assets/images/event1.jpg" alt="Event 3">
-    <img src="assets/images/event2.jpg" alt="Event 4">
-    <img src="assets/images/services1.jpg" alt="Event 5">
-    <img src="assets/images/services2.jpg" alt="Event 6">
-    <img src="assets/images/venus3.avif" alt="Event 7">
-    <img src="assets/images/event3.jpg" alt="Event 7">
-    <img src="assets/images/venus4.jpg" alt="Event 7">
-    <img src="assets/images/services3.jpg" alt="Event 7">
-    
+    <div class="slide-track">
+      <img src="assets/images/venus1.avif" alt="Event 1">
+      <img src="assets/images/venus2.avif" alt="Event 2">
+      <img src="assets/images/venus3.avif" alt="Event 3">
+      <img src="assets/images/venus4.jpg" alt="Event 4">
+      <img src="assets/images/venus5.jpg" alt="Event 5">
+      <img src="assets/images/venus6.avif" alt="Event 6">
+      <img src="assets/images/venus7.avif" alt="Event 7">
+      <!-- duplicate first images for seamless loop -->
+      <img src="assets/images/venus1.avif" alt="Event 1">
+      <img src="assets/images/venus2.avif" alt="Event 2">
+    </div>
   </div>
   <div class="overlay"></div>
   <div class="hero-content">
     <h2>Crafting Memorable Experiences</h2>
     <p>From weddings to conferences, we make every event unforgettable.</p>
-    <a href="register.php" class="btn">Get Started</a>
+    <a href="pages/register.php" class="btn">Get Started</a>
   </div>
 </section>
-
-<!-- Venues Section -->
 <section id="venues" class="venues">
   <h2>Our Venues</h2>
   <div class="carousel-container">
@@ -103,11 +102,10 @@
   </div>
 </section>
 
+
 <footer class="footer">
   <p>&copy; <?= date("Y"); ?> Evently. All rights reserved.</p>
 </footer>
-
-<!-- ✅ JavaScript -->
 <script>
 function scrollCards(rowId, direction) {
   const row = document.getElementById(rowId);
@@ -120,6 +118,5 @@ function scrollCards(rowId, direction) {
   row.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
 }
 </script>
-
 </body>
 </html>
